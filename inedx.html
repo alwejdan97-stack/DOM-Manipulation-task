@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Book List</h1>
+
+    <div>
+        Total Books: <span id="bookCounter">0</span>
+    </div>
+
+    <div id="title">
+        <label for="titleInput">Book Title:</label>
+        <input type="text" id="titleInput" placeholder="Enter book title...">
+    </div>
+
+    <div id="author">
+        <label for="authorInput">Author:</label>
+        <input type="text" id="authorInput" placeholder="Enter author's name...">
+    </div>
+
+    <button id="addBtn" onclick=" addBook()">Add Book</button>
+
+    <div id="bookContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
