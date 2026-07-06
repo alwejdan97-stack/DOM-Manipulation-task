@@ -102,8 +102,6 @@ function filterTasks(filterType) {
     });
 }
 
-addBtn.addEventListener('click', addTask);
-
 taskContainer.addEventListener('click', function(event) {
     const targetElement = event.target;
     const taskItem = targetElement.closest('.task-item');
