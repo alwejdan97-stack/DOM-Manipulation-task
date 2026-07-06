@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Content Manager</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="manager-container">
+        <h1>Tabbed Content Manager</h1>
+
+        <div class="control-header">
+            <button id="addTabBtn" onclick="addTab">+ Add Tab</button>
+            <div class="status-display">
+                Total Tabs: <span id="tabCount">0</span>
+            </div>
+        </div>
+
+        <div id="tabBar" class="tab-bar"></div>
+
+        <div class="content-frame">
+            <div id="contentArea" class="content-area"></div>
+            
+            <div id="saveFooter" class="save-footer hidden">
+                <span class="edit-warning">* Click inside content block to edit directly</span>
+                <button id="saveContentBtn" onclick="saveCurrentTabContent">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
