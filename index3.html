@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="script3.js"></script>
+</head>
+<body>
+
+    <h1>Shopping Cart</h1>
+
+    <div class="input-form">
+        <div class="input-group">
+            <label for="nameInput">Product Name</label>
+            <input type="text" id="nameInput" placeholder="e.g., Wireless Mouse">
+        </div>
+        <div class="input-group">
+            <label for="priceInput">Price ($)</label>
+            <input type="number" id="priceInput" step="0.01" min="0.01" placeholder="0.00">
+        </div>
+        <div class="input-group">
+            <label for="quantityInput">Quantity</label>
+            <input type="number" id="quantityInput" min="1" step="1" placeholder="1">
+        </div>
+        <button id="addBtn">Add Item</button>
+    </div>
+
+    <div id="cartContainer"></div>
+
+    <div class="cart-summary">
+        <button id="clearBtn">Clear Cart</button>
+        <div class="total-box">
+            Total Price: <span id="totalDisplay">OR 0.00</span>
+        </div>
+    </div>
+
+    
+</body>
+</html>
