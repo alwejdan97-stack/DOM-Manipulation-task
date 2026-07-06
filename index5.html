@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes App</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>My Notes</h1>
+
+        <div class="search-counter-bar">
+            <input type="text" id="searchInput" placeholder="Search notes by title or content...">
+            <div class="counter-box">
+                Total Notes: <span id="noteCounter">0</span>
+            </div>
+        </div>
+
+        <div class="note-form">
+            <input type="text" id="titleInput" placeholder="Note Title (Required)...">
+            <textarea id="contentInput" rows="4" placeholder="Take a note... (Optional)"></textarea>
+            <button id="addBtn" onclick="addNote">Add Note</button>
+        </div>
+
+        <div id="notesContainer"></div>
+    </div>
+</body>
+</html>
